@@ -1,0 +1,161 @@
+{
+    "name": "softtech-channel",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "org1msp"
+    },
+    "organizations": {
+        "org1msp": {
+            "mspid": "org1msp",
+            "peers": [
+                "na6fc3e-peer1org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer2org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer3org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051"
+            ],
+            "certificateAuthorities": [
+                "na6fc3e-caorg1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7054"
+            ]
+        },
+        "org2msp": {
+            "mspid": "org2msp",
+            "peers": [
+                "na6fc3e-peer2org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer1org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer3org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051"
+            ]
+        },
+        "org3msp": {
+            "mspid": "org3msp",
+            "peers": [
+                "na6fc3e-peer2org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer1org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+                "na6fc3e-peer3org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051"
+            ]
+        }
+    },
+    "orderers": {
+        "na6fc3e-orderer5.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6fc3e-orderer5.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUI21SJibmUXcw0pz9mgJ9K7cTU1UwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRcwFQYDVQQDEw5DQS1PUkRF\nUkVSLXRsczAeFw0xOTA4MDExMDQ0MDBaFw0zNDA3MjgxMDQ0MDBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJs\nZWRnZXIxDzANBgNVBAsTBkZhYnJpYzEXMBUGA1UEAxMOQ0EtT1JERVJFUi10bHMw\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATnzv2FQUQvoqteZr4W/Mae+eqD9MVP\nXbmZGazjcIk4deUH43H9qIGls1iNK7GRUVLq55ql/qbCHWnjxUTH9KdWo1YwVDAO\nBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUe7Dq\nYji0YXvxwUmVxYJ62lQWc4cwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNH\nADBEAiAI6+kGHRQqJlq1t9BWIFjc1eiLz4cYp2CmbfcN1Bc0QgIgEAIqI2YQnDQX\nISVRkVfNypeywvMd2hkoGTvoOoDI7+Y=\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "na6fc3e-orderer4.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6fc3e-orderer4.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUI21SJibmUXcw0pz9mgJ9K7cTU1UwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRcwFQYDVQQDEw5DQS1PUkRF\nUkVSLXRsczAeFw0xOTA4MDExMDQ0MDBaFw0zNDA3MjgxMDQ0MDBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJs\nZWRnZXIxDzANBgNVBAsTBkZhYnJpYzEXMBUGA1UEAxMOQ0EtT1JERVJFUi10bHMw\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATnzv2FQUQvoqteZr4W/Mae+eqD9MVP\nXbmZGazjcIk4deUH43H9qIGls1iNK7GRUVLq55ql/qbCHWnjxUTH9KdWo1YwVDAO\nBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUe7Dq\nYji0YXvxwUmVxYJ62lQWc4cwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNH\nADBEAiAI6+kGHRQqJlq1t9BWIFjc1eiLz4cYp2CmbfcN1Bc0QgIgEAIqI2YQnDQX\nISVRkVfNypeywvMd2hkoGTvoOoDI7+Y=\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "na6fc3e-orderer3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6fc3e-orderer3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUI21SJibmUXcw0pz9mgJ9K7cTU1UwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRcwFQYDVQQDEw5DQS1PUkRF\nUkVSLXRsczAeFw0xOTA4MDExMDQ0MDBaFw0zNDA3MjgxMDQ0MDBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJs\nZWRnZXIxDzANBgNVBAsTBkZhYnJpYzEXMBUGA1UEAxMOQ0EtT1JERVJFUi10bHMw\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATnzv2FQUQvoqteZr4W/Mae+eqD9MVP\nXbmZGazjcIk4deUH43H9qIGls1iNK7GRUVLq55ql/qbCHWnjxUTH9KdWo1YwVDAO\nBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUe7Dq\nYji0YXvxwUmVxYJ62lQWc4cwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNH\nADBEAiAI6+kGHRQqJlq1t9BWIFjc1eiLz4cYp2CmbfcN1Bc0QgIgEAIqI2YQnDQX\nISVRkVfNypeywvMd2hkoGTvoOoDI7+Y=\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "na6fc3e-orderer2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6fc3e-orderer2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUI21SJibmUXcw0pz9mgJ9K7cTU1UwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRcwFQYDVQQDEw5DQS1PUkRF\nUkVSLXRsczAeFw0xOTA4MDExMDQ0MDBaFw0zNDA3MjgxMDQ0MDBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJs\nZWRnZXIxDzANBgNVBAsTBkZhYnJpYzEXMBUGA1UEAxMOQ0EtT1JERVJFUi10bHMw\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATnzv2FQUQvoqteZr4W/Mae+eqD9MVP\nXbmZGazjcIk4deUH43H9qIGls1iNK7GRUVLq55ql/qbCHWnjxUTH9KdWo1YwVDAO\nBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUe7Dq\nYji0YXvxwUmVxYJ62lQWc4cwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNH\nADBEAiAI6+kGHRQqJlq1t9BWIFjc1eiLz4cYp2CmbfcN1Bc0QgIgEAIqI2YQnDQX\nISVRkVfNypeywvMd2hkoGTvoOoDI7+Y=\n-----END CERTIFICATE-----\n"
+            }
+        },
+        "na6fc3e-orderer1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6fc3e-orderer1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIzCCAcqgAwIBAgIUI21SJibmUXcw0pz9mgJ9K7cTU1UwCgYIKoZIzj0EAwIw\nZjELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRcwFQYDVQQDEw5DQS1PUkRF\nUkVSLXRsczAeFw0xOTA4MDExMDQ0MDBaFw0zNDA3MjgxMDQ0MDBaMGYxCzAJBgNV\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJs\nZWRnZXIxDzANBgNVBAsTBkZhYnJpYzEXMBUGA1UEAxMOQ0EtT1JERVJFUi10bHMw\nWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATnzv2FQUQvoqteZr4W/Mae+eqD9MVP\nXbmZGazjcIk4deUH43H9qIGls1iNK7GRUVLq55ql/qbCHWnjxUTH9KdWo1YwVDAO\nBgNVHQ8BAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUe7Dq\nYji0YXvxwUmVxYJ62lQWc4cwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNH\nADBEAiAI6+kGHRQqJlq1t9BWIFjc1eiLz4cYp2CmbfcN1Bc0QgIgEAIqI2YQnDQX\nISVRkVfNypeywvMd2hkoGTvoOoDI7+Y=\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "na6fc3e-peer1org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer1org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHTCCAcSgAwIBAgIUb7wkn61lMcCc9LIUYjzTFTPyBFQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcx\nLXRsczAeFw0xOTA4MDExMDQyMDBaFw0zNDA3MjgxMDQyMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAAQSZkSmOb+2r1sWj9KJobfcdBXn4aGsQP9QZIPw\nVTzcZAfCoTCf3ehGNbbT6Z82Ay3XNOpAMWjxFBuWqKyptm0Jo1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUAch3S8C0x/SZ\nYpTc2CGe2TFdxOgwDwYDVR0RBAgwBocECrAU3DAKBggqhkjOPQQDAgNHADBEAiB4\nytzuxjmXYRNZ5n0bVIt5jcNpUJMfJEXFg7sPibD2kwIgDG7kLhggtWP+/YTsi9wl\nsmUZPKxS6HOfDyTlXzQYk3A=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer1org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer2org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer2org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHjCCAcSgAwIBAgIUSNQcLvzsO8SEwokdpSLScXAYbWUwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcy\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMi10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAATR8+Rtgld+PE/9O4zu9zCdwcpA7C3piYfVrYWy\nFJ3/4I9rjLCeLXwYN8HlniD8RVDO9w+84DyyjZ9VvAgK0BDho1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQU656LIwJ8gQBV\nDas+Ks93bGOy6/MwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNIADBFAiEA\nrqBrD3toI59DxIpSofcyrJpbBkEagCun3tr0zz1GwAcCIHXHt7RAYrsUgylOsI30\nnRrCDkpPhjLDwKNZkMvg1r1m\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer2org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer2org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer2org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHTCCAcSgAwIBAgIUb7wkn61lMcCc9LIUYjzTFTPyBFQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcx\nLXRsczAeFw0xOTA4MDExMDQyMDBaFw0zNDA3MjgxMDQyMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAAQSZkSmOb+2r1sWj9KJobfcdBXn4aGsQP9QZIPw\nVTzcZAfCoTCf3ehGNbbT6Z82Ay3XNOpAMWjxFBuWqKyptm0Jo1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUAch3S8C0x/SZ\nYpTc2CGe2TFdxOgwDwYDVR0RBAgwBocECrAU3DAKBggqhkjOPQQDAgNHADBEAiB4\nytzuxjmXYRNZ5n0bVIt5jcNpUJMfJEXFg7sPibD2kwIgDG7kLhggtWP+/YTsi9wl\nsmUZPKxS6HOfDyTlXzQYk3A=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer2org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer1org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer1org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHjCCAcSgAwIBAgIUSNQcLvzsO8SEwokdpSLScXAYbWUwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcy\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMi10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAATR8+Rtgld+PE/9O4zu9zCdwcpA7C3piYfVrYWy\nFJ3/4I9rjLCeLXwYN8HlniD8RVDO9w+84DyyjZ9VvAgK0BDho1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQU656LIwJ8gQBV\nDas+Ks93bGOy6/MwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNIADBFAiEA\nrqBrD3toI59DxIpSofcyrJpbBkEagCun3tr0zz1GwAcCIHXHt7RAYrsUgylOsI30\nnRrCDkpPhjLDwKNZkMvg1r1m\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer1org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer2org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer2org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHDCCAcSgAwIBAgIUQjhsNLFinEBVQPvqG7Om9AG1cjQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcz\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMy10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAARkZTi0rflSsoG699SGKajdD0KOpS0ic9P1dPSM\nJ58qJVI7FtrMl3/s3CLJRPvMt4QzHqsGF7OUH03nCiFboZS3o1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUMy6TcNk8wZo+\neySoMtUJDXywsS4wDwYDVR0RBAgwBocECrAU4DAKBggqhkjOPQQDAgNGADBDAh9T\nqwR4Jurjwe+WTf+bTeOVQe1k4b2Zn80c+2zcc0c+AiBoO8dIkW+Snlj8LFUBqo18\n/3sbjhGjYzGwEviNnLa0OA==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer2org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer1org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer1org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHDCCAcSgAwIBAgIUQjhsNLFinEBVQPvqG7Om9AG1cjQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcz\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMy10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAARkZTi0rflSsoG699SGKajdD0KOpS0ic9P1dPSM\nJ58qJVI7FtrMl3/s3CLJRPvMt4QzHqsGF7OUH03nCiFboZS3o1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUMy6TcNk8wZo+\neySoMtUJDXywsS4wDwYDVR0RBAgwBocECrAU4DAKBggqhkjOPQQDAgNGADBDAh9T\nqwR4Jurjwe+WTf+bTeOVQe1k4b2Zn80c+2zcc0c+AiBoO8dIkW+Snlj8LFUBqo18\n/3sbjhGjYzGwEviNnLa0OA==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer1org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer3org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer3org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHjCCAcSgAwIBAgIUSNQcLvzsO8SEwokdpSLScXAYbWUwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcy\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMi10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAATR8+Rtgld+PE/9O4zu9zCdwcpA7C3piYfVrYWy\nFJ3/4I9rjLCeLXwYN8HlniD8RVDO9w+84DyyjZ9VvAgK0BDho1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQU656LIwJ8gQBV\nDas+Ks93bGOy6/MwDwYDVR0RBAgwBocECl+0qzAKBggqhkjOPQQDAgNIADBFAiEA\nrqBrD3toI59DxIpSofcyrJpbBkEagCun3tr0zz1GwAcCIHXHt7RAYrsUgylOsI30\nnRrCDkpPhjLDwKNZkMvg1r1m\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer3org2.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer3org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer3org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHTCCAcSgAwIBAgIUb7wkn61lMcCc9LIUYjzTFTPyBFQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcx\nLXRsczAeFw0xOTA4MDExMDQyMDBaFw0zNDA3MjgxMDQyMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAAQSZkSmOb+2r1sWj9KJobfcdBXn4aGsQP9QZIPw\nVTzcZAfCoTCf3ehGNbbT6Z82Ay3XNOpAMWjxFBuWqKyptm0Jo1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUAch3S8C0x/SZ\nYpTc2CGe2TFdxOgwDwYDVR0RBAgwBocECrAU3DAKBggqhkjOPQQDAgNHADBEAiB4\nytzuxjmXYRNZ5n0bVIt5jcNpUJMfJEXFg7sPibD2kwIgDG7kLhggtWP+/YTsi9wl\nsmUZPKxS6HOfDyTlXzQYk3A=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer3org1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        },
+        "na6fc3e-peer3org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6fc3e-peer3org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHDCCAcSgAwIBAgIUQjhsNLFinEBVQPvqG7Om9AG1cjQwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtDQS1PUkcz\nLXRsczAeFw0xOTA4MDExMDQzMDBaFw0zNDA3MjgxMDQzMDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLQ0EtT1JHMy10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAARkZTi0rflSsoG699SGKajdD0KOpS0ic9P1dPSM\nJ58qJVI7FtrMl3/s3CLJRPvMt4QzHqsGF7OUH03nCiFboZS3o1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUMy6TcNk8wZo+\neySoMtUJDXywsS4wDwYDVR0RBAgwBocECrAU4DAKBggqhkjOPQQDAgNGADBDAh9T\nqwR4Jurjwe+WTf+bTeOVQe1k4b2Zn80c+2zcc0c+AiBoO8dIkW+Snlj8LFUBqo18\n/3sbjhGjYzGwEviNnLa0OA==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6fc3e-peer3org3.devadv-turkey-blockchain.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "na6fc3e-caorg1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7054": {
+            "url": "https://na6fc3e-caorg1.devadv-turkey-blockchain.us-south.containers.appdomain.cloud:7054",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\r\nMIIDPDCCAqWgAwIBAgIJHeYH0m3gJ/rmMA0GCSqGSIb3DQEBBQUAMIGxMVQwUgYD\r\nVQQDE0tuYTZmYzNlLWNhb3JnMS5kZXZhZHYtdHVya2V5LWJsb2NrY2hhaW4udXMt\r\nc291dGguY29udGFpbmVycy5hcHBkb21haW4uY2xvdWQxCzAJBgNVBAYTAlVTMRcw\r\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEMMAoGA1UE\r\nChMDSUJNMRMwEQYDVQQLEwpCbG9ja2NoYWluMB4XDTE5MDgwMTEwNDM1NVoXDTIw\r\nMDczMTEwNDM1NVowgbExVDBSBgNVBAMTS25hNmZjM2UtY2FvcmcxLmRldmFkdi10\r\ndXJrZXktYmxvY2tjaGFpbi51cy1zb3V0aC5jb250YWluZXJzLmFwcGRvbWFpbi5j\r\nbG91ZDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYD\r\nVQQHEwdSYWxlaWdoMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4w\r\ngZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ0pC543RAIoQ4imHN8Pi2xQkkvs\r\nukZJllcKjyQ8uXR/vqyA0qOb8eIPbGFSF+T52l5SzAJ8IX1jlY23q94nPZTpWxU9\r\nmBBnbuUi1k0JYh0tubMCQM8e6Yic8xmAeDLre9qYLETwlKei/5TCGZj7+MY95H10\r\nGM2hND96mC5/MEtfAgMBAAGjWjBYMFYGA1UdEQRPME2CS25hNmZjM2UtY2Fvcmcx\r\nLmRldmFkdi10dXJrZXktYmxvY2tjaGFpbi51cy1zb3V0aC5jb250YWluZXJzLmFw\r\ncGRvbWFpbi5jbG91ZDANBgkqhkiG9w0BAQUFAAOBgQAJDxWpsv1U/2cXtK5hEYoY\r\n9iZFba9bmA+OIgnrRVgaMHbeGa6f6L+gdEXy2KVodWdp1fy32K9gG6fyADZIgfZF\r\nd/SHvWkWQh2OS6g4wTJDiDbzMaC+0okjBMIAqNtDzNtXi0SqH6x7n6JlKVJUGcZU\r\n1eCx0dOQUAiIblfP953heg==\r\n-----END CERTIFICATE-----\r\n"
+            }
+        }
+    }
+}

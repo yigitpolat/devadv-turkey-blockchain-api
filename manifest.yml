@@ -1,0 +1,4 @@
+applications:
+  - name: devadv-turkey-blockchain-api
+    random-route: false
+    memory: 512M
